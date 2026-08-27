@@ -457,9 +457,14 @@ ul { list-style: none; }
 }
 .marquee__track {
   display: flex;
-  gap: 20px;
   width: max-content;
   animation: marquee 32s linear infinite;
+}
+.marquee__group {
+  display: flex;
+  flex-shrink: 0;
+  gap: 20px;
+  padding-right: 20px;
 }
 .marquee__track span {
   font-family: 'Space Grotesk', sans-serif;
@@ -467,10 +472,10 @@ ul { list-style: none; }
   color: var(--text-dimmer);
   white-space: nowrap;
 }
-.marquee__track span:nth-child(odd) { color: var(--text-dim); }
+.marquee__group span:nth-child(odd) { color: var(--text-dim); }
 @keyframes marquee {
   from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  to { transform: translateX(-16.6667%); }
 }
 
 /* ==========================================================================
