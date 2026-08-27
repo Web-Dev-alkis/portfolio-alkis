@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alkis Papapostolou — Portfolio</title>
+<meta name="description" content="Portfolio of Alkis Papapostolou — Software Developer">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2308090d'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='13' font-weight='700' text-anchor='middle' fill='url(%23g)'%3EAP%3C/text%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='32' y2='0'%3E%3Cstop stop-color='%237c5cff'/%3E%3Cstop offset='1' stop-color='%23ff5ca8'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="cursor-glow" aria-hidden="true"></div>
+<div class="noise" aria-hidden="true"></div>
+
+<div class="progress-bar" aria-hidden="true"><div class="progress-bar__fill" id="progressFill"></div></div>
+
+<header class="nav" id="nav">
+  <a href="#home" class="nav__logo">AP<span>.</span></a>
+  <nav class="nav__links" id="navLinks">
+    <a href="#home" class="nav__link active" data-section="home">Home</a>
+    <a href="#about" class="nav__link" data-section="about">About</a>
+    <a href="#skills" class="nav__link" data-section="skills">Skills</a>
+    <a href="#work" class="nav__link" data-section="work">Work</a>
+    <a href="#experience" class="nav__link" data-section="experience">Experience</a>
+    <a href="#contact" class="nav__link" data-section="contact">Contact</a>
+  </nav>
+  <a href="#contact" class="nav__cta">Let's talk</a>
+  <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__blob hero__blob--1" aria-hidden="true"></div>
+    <div class="hero__blob hero__blob--2" aria-hidden="true"></div>
+    <div class="hero__grid" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal">
+        <span class="dot-pulse" aria-hidden="true"></span>
+        Available for new opportunities
+      </p>
+      <h1 class="hero__title reveal">
+        <span class="hero__title-line">Hi, I'm <span class="text-gradient">Alkis Papapostolou</span></span>
+        <span class="hero__title-line">I build <span class="hero__typewriter" id="typewriter"></span></span>
+      </h1>
+      <p class="hero__subtitle reveal">
+        A software developer crafting fast, accessible, and delightful digital
+        experiences — from pixel-perfect interfaces to resilient backend systems.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#work" class="btn btn--primary">
+          <span>View my work</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+
+      <div class="hero__scroll-cue reveal" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"><i></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Frontend Development</span><span>·</span>
+      <span>Backend Systems</span><span>·</span>
+      <span>UI / UX</span><span>·</span>
+      <span>Cloud &amp; DevOps</span><span>·</span>
+      <span>API Design</span><span>·</span>
+      <span>Performance</span><span>·</span>
+      <span>Frontend Development</span><span>·</span>
+      <span>Backend Systems</span><span>·</span>
+      <span>UI / UX</span><span>·</span>
+      <span>Cloud &amp; DevOps</span><span>·</span>
+      <span>API Design</span><span>·</span>
+      <span>Performance</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="section__inner">
+      <p class="section__kicker reveal"><span class="kicker-num">01</span> About Me</p>
+      <div class="about__grid">
+        <div class="about__text">
+          <h2 class="section__title reveal">
+            I turn complex problems into <span class="text-gradient">simple, elegant</span> solutions.
+          </h2>
+          <p class="reveal">
+            I'm a developer who cares as much about how a product feels as how it
+            works. With a background spanning full-stack web development, I enjoy
+            the entire lifecycle — from architecture and API design to the final
+            micro-interaction that makes an interface feel alive.
+          </p>
+          <p class="reveal">
+            When I'm not shipping code, I'm exploring new tools, contributing to
+            side projects, or sketching out the next idea worth building.
+          </p>
+
+          <div class="about__stats reveal">
+            <div class="stat">
+              <span class="stat__num" data-count="4">0</span><span class="stat__suffix">+</span>
+              <span class="stat__label">Years experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="30">0</span><span class="stat__suffix">+</span>
+              <span class="stat__label">Projects shipped</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="12">0</span><span class="stat__suffix">+</span>
+              <span class="stat__label">Happy clients</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__visual reveal">
+          <div class="card-3d" id="card3d">
+            <div class="card-3d__glow"></div>
+            <div class="card-3d__inner">
+              <div class="avatar-ring">
+                <div class="avatar-placeholder">AP</div>
+              </div>
+              <p class="card-3d__name">Alkis Papapostolou</p>
+              <p class="card-3d__role">Software Developer</p>
+              <div class="card-3d__tags">
+                <span>JavaScript</span><span>React</span><span>Node.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills">
+    <div class="section__inner">
+      <p class="section__kicker reveal"><span class="kicker-num">02</span> Skills</p>
+      <h2 class="section__title reveal">Tools &amp; technologies I work with</h2>
+
+      <div class="skills__grid">
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4V4z" stroke="currentColor" stroke-width="1.6"/><path d="M9 9l-2 3 2 3M15 9l2 3-2 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Frontend</h3>
+          <p>HTML5, CSS3, JavaScript (ES6+), React, TypeScript, Vue</p>
+          <div class="skill-card__bar"><span style="--pct:92%"></span></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 7a2 2 0 012-2h12a2 2 0 012 2v3H4V7zM4 14a2 2 0 012-2h12a2 2 0 012 2v3a2 2 0 01-2 2H6a2 2 0 01-2-2v-3z" stroke="currentColor" stroke-width="1.6"/><circle cx="7" cy="8.5" r=".8" fill="currentColor"/><circle cx="7" cy="15.5" r=".8" fill="currentColor"/></svg>
+          </div>
+          <h3>Backend</h3>
+          <p>Node.js, Express, Python, REST &amp; GraphQL APIs, PostgreSQL</p>
+          <div class="skill-card__bar"><span style="--pct:85%"></span></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4-8 4-8-4 8-4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M4 11l8 4 8-4M4 15l8 4 8-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Cloud &amp; DevOps</h3>
+          <p>AWS, Docker, CI/CD, Git, Linux, Nginx</p>
+          <div class="skill-card__bar"><span style="--pct:78%"></span></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.35-9.5-8.5C.5 7.5 3 4 6.5 4c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3 3.5 0 6 3.5 4 7.5C19 15.65 12 20 12 20z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Design</h3>
+          <p>Figma, Design Systems, UI/UX, Accessibility (WCAG)</p>
+          <div class="skill-card__bar"><span style="--pct:80%"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section work" id="work">
+    <div class="section__inner">
+      <p class="section__kicker reveal"><span class="kicker-num">03</span> Selected Work</p>
+      <h2 class="section__title reveal">Projects I'm proud of</h2>
+
+      <div class="filters reveal" id="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="tool">Tools</button>
+      </div>
+
+      <div class="projects" id="projects">
+
+        <article class="project reveal" data-cat="web">
+          <div class="project__media">
+            <div class="project__gradient project__gradient--1"></div>
+            <div class="project__number">01</div>
+          </div>
+          <div class="project__body">
+            <div class="project__top">
+              <h3>Commerce Platform</h3>
+              <a href="#" class="project__link" aria-label="Open project">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M7 7h10v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+            <p>A full-stack e-commerce platform with real-time inventory, Stripe checkout, and an admin dashboard.</p>
+            <div class="project__tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+          </div>
+        </article>
+
+        <article class="project reveal" data-cat="design">
+          <div class="project__media">
+            <div class="project__gradient project__gradient--2"></div>
+            <div class="project__number">02</div>
+          </div>
+          <div class="project__body">
+            <div class="project__top">
+              <h3>Design System</h3>
+              <a href="#" class="project__link" aria-label="Open project">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M7 7h10v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+            <p>A component library and design system used across a company's product suite, built in Figma and React.</p>
+            <div class="project__tags"><span>Figma</span><span>Storybook</span><span>TypeScript</span></div>
+          </div>
+        </article>
+
+        <article class="project reveal" data-cat="tool">
+          <div class="project__media">
+            <div class="project__gradient project__gradient--3"></div>
+            <div class="project__number">03</div>
+          </div>
+          <div class="project__body">
+            <div class="project__top">
+              <h3>DevOps CLI Tool</h3>
+              <a href="#" class="project__link" aria-label="Open project">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M7 7h10v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+            <p>An open-source CLI that automates deployment pipelines and infrastructure provisioning on AWS.</p>
+            <div class="project__tags"><span>Python</span><span>AWS</span><span>Docker</span></div>
+          </div>
+        </article>
+
+        <article class="project reveal" data-cat="web">
+          <div class="project__media">
+            <div class="project__gradient project__gradient--4"></div>
+            <div class="project__number">04</div>
+          </div>
+          <div class="project__body">
+            <div class="project__top">
+              <h3>Analytics Dashboard</h3>
+              <a href="#" class="project__link" aria-label="Open project">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M7 7h10v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+            <p>A real-time analytics dashboard with live data streaming and customizable, exportable reports.</p>
+            <div class="project__tags"><span>Vue</span><span>D3.js</span><span>WebSockets</span></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section experience" id="experience">
+    <div class="section__inner">
+      <p class="section__kicker reveal"><span class="kicker-num">04</span> Experience</p>
+      <h2 class="section__title reveal">Where I've worked</h2>
+
+      <div class="timeline">
+        <div class="timeline__line" aria-hidden="true"><div class="timeline__line-fill" id="timelineFill"></div></div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <span class="timeline__date">2023 — Present</span>
+            <h3>Senior Software Developer</h3>
+            <p class="timeline__company">Company Name</p>
+            <p>Leading development of core product features, mentoring junior developers, and driving architecture decisions for a platform serving thousands of users.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <span class="timeline__date">2021 — 2023</span>
+            <h3>Software Developer</h3>
+            <p class="timeline__company">Previous Company</p>
+            <p>Built and shipped full-stack features, improved application performance by 40%, and collaborated closely with design on a full UI refresh.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <span class="timeline__date">2020 — 2021</span>
+            <h3>Junior Developer</h3>
+            <p class="timeline__company">First Company</p>
+            <p>Started my career building internal tools and learning best practices in a fast-paced, collaborative engineering team.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="contact__blob" aria-hidden="true"></div>
+    <div class="section__inner">
+      <p class="section__kicker reveal"><span class="kicker-num">05</span> Contact</p>
+      <h2 class="section__title section__title--big reveal">
+        Let's build something <span class="text-gradient">great</span> together.
+      </h2>
+      <p class="contact__lead reveal">
+        Have a project in mind, or just want to say hi? My inbox is always open.
+      </p>
+
+      <div class="contact__grid">
+        <form class="contact__form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <input type="text" id="name" name="name" required placeholder=" ">
+              <label for="name">Your name</label>
+            </div>
+            <div class="field">
+              <input type="email" id="email" name="email" required placeholder=" ">
+              <label for="email">Your email</label>
+            </div>
+          </div>
+          <div class="field">
+            <input type="text" id="subject" name="subject" placeholder=" ">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="field">
+            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+            <label for="message">Your message</label>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <span id="submitLabel">Send message</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact__info reveal">
+          <a href="mailto:hello@example.com" class="contact__item">
+            <span class="contact__item-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M3 6l9 7 9-7M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </span>
+            <span>
+              <strong>Email</strong>
+              <em>hello@example.com</em>
+            </span>
+          </a>
+          <a href="#" class="contact__item">
+            <span class="contact__item-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </span>
+            <span>
+              <strong>LinkedIn</strong>
+              <em>/in/yourname</em>
+            </span>
+          </a>
+          <a href="#" class="contact__item">
+            <span class="contact__item-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.4 9.4 0 015 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0012 2z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+            </span>
+            <span>
+              <strong>GitHub</strong>
+              <em>/yourname</em>
+            </span>
+          </a>
+
+          <div class="contact__availability">
+            <span class="dot-pulse" aria-hidden="true"></span>
+            Currently open to freelance &amp; full-time roles
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="section__inner footer__inner">
+    <p>© <span id="year"></span> Alkis Papapostolou. Crafted with care.</p>
+    <button class="to-top" id="toTop" aria-label="Back to top">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
