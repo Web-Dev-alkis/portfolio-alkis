@@ -247,6 +247,25 @@
   }
 
   /* ------------------------------------------------------------------ */
+  /* Copy email to clipboard (mailto: is a no-op with no mail client)    */
+  /* ------------------------------------------------------------------ */
+  const emailLink = document.getElementById('emailLink');
+  const emailCopied = document.getElementById('emailCopied');
+  if (emailLink && emailCopied) {
+    let copiedTimeout;
+    emailLink.addEventListener('click', () => {
+      const email = emailLink.getAttribute('href').replace('mailto:', '');
+      if (!navigator.clipboard) return;
+      navigator.clipboard.writeText(email).then(() => {
+        emailCopied.textContent = 'Copied to clipboard';
+        emailCopied.classList.add('is-visible');
+        clearTimeout(copiedTimeout);
+        copiedTimeout = setTimeout(() => emailCopied.classList.remove('is-visible'), 2200);
+      }).catch(() => {});
+    });
+  }
+
+  /* ------------------------------------------------------------------ */
   /* Back to top                                                         */
   /* ------------------------------------------------------------------ */
   const toTop = document.getElementById('toTop');
